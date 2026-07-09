@@ -10,12 +10,22 @@
 build/
 install/
 log/
-
+workspace/
 src/arm/urdf/arm.urdf
 src/my_robot_bringup/
 src/my_robot_description/
 src/ros_tutorials/
+src/athena_description/
 src/minirover_description_ros2/
 *.pyc
 __pycache__/
 .vscode/
+# User files
+.bash_history
+.cache/
+.config/
+.fluxbox/
+.gazebo/
+.ros/
+.rviz2/
+.vnc/

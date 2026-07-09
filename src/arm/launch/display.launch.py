@@ -20,13 +20,23 @@ def generate_launch_description():
     robot_state_publisher_node = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
-        output='screen',
+        output='screen',    
         parameters=[{'robot_description': robot_description_raw}]
     )
 
-    joint_state_publisher_gui_node = Node(
-        package='joint_state_publisher_gui',
-        executable='joint_state_publisher_gui',
+    joint_state_publisher_node = Node(
+        package='joint_state_publisher',
+        executable='joint_state_publisher',
+        parameters=[{
+            'zeros': {
+                'base_yaw_joint': 0.0,
+                'shoulder_joint': 0.0,
+                'elbow_joint': 0.0,
+                'wrist_pitch_joint': 0.0,
+                'wrist_roll_joint': 0.0,
+                'gripper_joint': 0.0,
+            }
+        }],
         output='screen'
     )
 
@@ -41,6 +51,6 @@ def generate_launch_description():
     # 5. Return Launch Description
     return LaunchDescription([
         robot_state_publisher_node,
-        joint_state_publisher_gui_node,
+        joint_state_publisher_node,
         rviz2_node
     ])

@@ -30,6 +30,7 @@ install(
 install(
   PROGRAMS
     scripts/keyboard_arm.py
+    scripts/keyboard_arm_jog.py
   DESTINATION lib/${PROJECT_NAME}
 )
 ament_package()
