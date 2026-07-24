@@ -16,6 +16,8 @@ src/my_robot_bringup/
 src/my_robot_description/
 src/ros_tutorials/
 src/athena_description/
+src/arm_moveit_config/
+src/arm_pid_controller/
 src/minirover_description_ros2/
 *.pyc
 __pycache__/
