@@ -1,78 +1,111 @@
 from launch import LaunchDescription
 from launch.actions import ExecuteProcess
+from launch.substitutions import Command
+
 from launch_ros.actions import Node
+from launch.actions import TimerAction
+
 
 from ament_index_python.packages import get_package_share_directory
-
+from launch.actions import RegisterEventHandler
+from launch.event_handlers import OnProcessExit
 import os
 
 
 def generate_launch_description():
 
     pkg_arm = get_package_share_directory("arm")
+    
 
-    urdf_file = os.path.join(
+    xacro_file = os.path.join(
         pkg_arm,
         "urdf",
-        "arm.urdf"
+        "arm_cad.urdf.xacro",
     )
+    joint_state_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["joint_state_broadcaster"],
+        output="screen",
+        )
+
+    arm_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["arm_controller"],
+        output="screen",
+        )
+
+    robot_description = {
+        "robot_description": Command([
+            "xacro ",
+            xacro_file,
+            " use_gazebo:=true",
+            " use_mock_hardware:=false",
+        ])
+    }
 
     return LaunchDescription([
 
+        # Gazebo
         ExecuteProcess(
-    cmd=["gz", "sim", "-r", "empty.sdf"],
-    output="screen"
-        ),   
+            cmd=["gz", "sim", "-r", os.path.join(pkg_arm, "worlds", "/home/koro/ros2_ws/src/arm/worlds/empty_with_sensors.sdf")],
+            output="screen",
+        ),
 
+        # Clock bridge
         Node(
             package="ros_gz_bridge",
             executable="parameter_bridge",
             arguments=[
-                "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock"
+                "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock",
+
+                "/camera/image@sensor_msgs/msg/Image@gz.msgs.Image",
+                "/camera/depth_image@sensor_msgs/msg/Image@gz.msgs.Image",
+                "/camera/camera_info@sensor_msgs/msg/CameraInfo@gz.msgs.CameraInfo",
+                "/camera/points@sensor_msgs/msg/PointCloud2@gz.msgs.PointCloudPacked",
             ],
             output="screen",
         ),
-        
+
+        # Publish robot description
         Node(
             package="robot_state_publisher",
             executable="robot_state_publisher",
-            arguments=[urdf_file],
-            output="screen"
+            parameters=[
+                robot_description,
+                {"use_sim_time": True},
+            ],
+            output="screen",
         ),
 
+        # Spawn robot into Gazebo from robot_description
         Node(
             package="ros_gz_sim",
             executable="create",
             arguments=[
-                "-file",
-                urdf_file,
+                "-topic",
+                "robot_description",
                 "-name",
-                "custom_arm"
+                "custom_arm",
+                "-z",
+                "0.020",
             ],
-            output="screen"
+            output="screen",
         ),
 
-        Node(
-            package="controller_manager",
-            executable="spawner",
-            arguments=["joint_state_broadcaster"],
-            output="screen"
+        # Controllers
+        TimerAction(
+            period=10.0,
+            actions=[
+                joint_state_spawner
+            ]
         ),
 
-        Node(
-            package="controller_manager",
-            executable="spawner",
-            arguments=["arm_controller"],
-            output="screen"
-        ),
-
-        Node(
-            package="robot_state_publisher",
-            executable="robot_state_publisher",
-            arguments=[urdf_file],
-            parameters=[
-                {"use_sim_time": True}
-            ],
-            output="screen"
+    RegisterEventHandler(
+        OnProcessExit(
+            target_action=joint_state_spawner,
+            on_exit=[arm_spawner],
         )
-    ])
+    ),
+])

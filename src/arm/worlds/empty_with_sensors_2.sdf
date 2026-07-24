@@ -1,0 +1,1851 @@
+<sdf version='1.10'>
+  <world name='empty'>
+    <physics name='1ms' type='ignored'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <plugin name='gz::sim::systems::Physics' filename='gz-sim-physics-system'/>
+    <plugin name='gz::sim::systems::UserCommands' filename='gz-sim-user-commands-system'/>
+    <plugin name='gz::sim::systems::SceneBroadcaster' filename='gz-sim-scene-broadcaster-system'/>
+    <plugin name='gz::sim::systems::Contact' filename='gz-sim-contact-system'/>
+    <plugin name='gz::sim::systems::Sensors' filename='gz-sim-sensors-system'>
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <gravity>0 0 -9.8000000000000007</gravity>
+    <magnetic_field>5.5644999999999998e-06 2.2875799999999999e-05 -4.2388400000000002e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <scene>
+      <ambient>0.400000006 0.400000006 0.400000006 1</ambient>
+      <background>0.699999988 0.699999988 0.699999988 1</background>
+      <shadows>true</shadows>
+    </scene>
+    <model name='aws_robomaker_warehouse_ShelfF_01_001'>
+      <model name='aws_robomaker_warehouse_ShelfF_01'>
+        <link name='link'>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ShelfF_01_collision.DAE</uri>
+              </mesh>
+            </geometry>
+            <surface>
+              <friction>
+                <ode>
+                  <mu>0.20000000000000001</mu>
+                  <mu2>0.20000000000000001</mu2>
+                  <fdir1>0 0 0</fdir1>
+                  <slip1>0</slip1>
+                  <slip2>0</slip2>
+                </ode>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ShelfF_01_visual.DAE</uri>
+              </mesh>
+            </geometry>
+            <meta>
+              <layer>1</layer>
+            </meta>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>
+      <pose>-5.79514 -0.95663500000000001 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='aws_robomaker_warehouse_WallB_01_001'>
+      <model name='aws_robomaker_warehouse_WallB_01'>
+        <link name='link'>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_WallB_01_collision.DAE</uri>
+              </mesh>
+            </geometry>
+            <surface>
+              <friction>
+                <ode>
+                  <mu>0.5</mu>
+                  <mu2>0.5</mu2>
+                  <fdir1>0 0 0</fdir1>
+                  <slip1>0</slip1>
+                  <slip2>0</slip2>
+                </ode>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_WallB_01_visual.DAE</uri>
+              </mesh>
+            </geometry>
+            <meta>
+              <layer>2</layer>
+            </meta>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>
+      <pose>0 0 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='aws_robomaker_warehouse_ShelfE_01_001'>
+      <model name='aws_robomaker_warehouse_ShelfE_01'>
+        <link name='link'>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ShelfE_01_collision.DAE</uri>
+              </mesh>
+            </geometry>
+            <surface>
+              <friction>
+                <ode>
+                  <mu>0.20000000000000001</mu>
+                  <mu2>0.20000000000000001</mu2>
+                  <fdir1>0 0 0</fdir1>
+                  <slip1>0</slip1>
+                  <slip2>0</slip2>
+                </ode>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ShelfE_01_visual.DAE</uri>
+              </mesh>
+            </geometry>
+            <meta>
+              <layer>1</layer>
+            </meta>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>
+      <pose>4.73156 0.57943 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='aws_robomaker_warehouse_ShelfE_01_002'>
+      <model name='aws_robomaker_warehouse_ShelfE_01'>
+        <link name='link'>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ShelfE_01_collision.DAE</uri>
+              </mesh>
+            </geometry>
+            <surface>
+              <friction>
+                <ode>
+                  <mu>0.20000000000000001</mu>
+                  <mu2>0.20000000000000001</mu2>
+                  <fdir1>0 0 0</fdir1>
+                  <slip1>0</slip1>
+                  <slip2>0</slip2>
+                </ode>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ShelfE_01_visual.DAE</uri>
+              </mesh>
+            </geometry>
+            <meta>
+              <layer>1</layer>
+            </meta>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>
+      <pose>4.73156 -4.8270499999999998 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='aws_robomaker_warehouse_ShelfE_01_003'>
+      <model name='aws_robomaker_warehouse_ShelfE_01'>
+        <link name='link'>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ShelfE_01_collision.DAE</uri>
+              </mesh>
+            </geometry>
+            <surface>
+              <friction>
+                <ode>
+                  <mu>0.20000000000000001</mu>
+                  <mu2>0.20000000000000001</mu2>
+                  <fdir1>0 0 0</fdir1>
+                  <slip1>0</slip1>
+                  <slip2>0</slip2>
+                </ode>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ShelfE_01_visual.DAE</uri>
+              </mesh>
+            </geometry>
+            <meta>
+              <layer>1</layer>
+            </meta>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>
+      <pose>4.73156 -8.6651000000000007 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='aws_robomaker_warehouse_ShelfD_01_001'>
+      <model name='aws_robomaker_warehouse_ShelfD_01'>
+        <link name='link'>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ShelfD_01_collision.DAE</uri>
+                <scale>1 1 1</scale>
+              </mesh>
+            </geometry>
+            <surface>
+              <friction>
+                <ode>
+                  <mu>0.20000000000000001</mu>
+                  <mu2>0.20000000000000001</mu2>
+                  <fdir1>0 0 0</fdir1>
+                  <slip1>0</slip1>
+                  <slip2>0</slip2>
+                </ode>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ShelfD_01_visual.DAE</uri>
+              </mesh>
+            </geometry>
+            <meta>
+              <layer>1</layer>
+            </meta>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>
+      <pose>4.73156 -1.2426699999999999 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='aws_robomaker_warehouse_ShelfD_01_002'>
+      <model name='aws_robomaker_warehouse_ShelfD_01'>
+        <link name='link'>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ShelfD_01_collision.DAE</uri>
+                <scale>1 1 1</scale>
+              </mesh>
+            </geometry>
+            <surface>
+              <friction>
+                <ode>
+                  <mu>0.20000000000000001</mu>
+                  <mu2>0.20000000000000001</mu2>
+                  <fdir1>0 0 0</fdir1>
+                  <slip1>0</slip1>
+                  <slip2>0</slip2>
+                </ode>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ShelfD_01_visual.DAE</uri>
+              </mesh>
+            </geometry>
+            <meta>
+              <layer>1</layer>
+            </meta>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>
+      <pose>4.73156 -3.0385499999999999 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='aws_robomaker_warehouse_ShelfD_01_003'>
+      <model name='aws_robomaker_warehouse_ShelfD_01'>
+        <link name='link'>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ShelfD_01_collision.DAE</uri>
+                <scale>1 1 1</scale>
+              </mesh>
+            </geometry>
+            <surface>
+              <friction>
+                <ode>
+                  <mu>0.20000000000000001</mu>
+                  <mu2>0.20000000000000001</mu2>
+                  <fdir1>0 0 0</fdir1>
+                  <slip1>0</slip1>
+                  <slip2>0</slip2>
+                </ode>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ShelfD_01_visual.DAE</uri>
+              </mesh>
+            </geometry>
+            <meta>
+              <layer>1</layer>
+            </meta>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>
+      <pose>4.73156 -6.75054 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='aws_robomaker_warehouse_GroundB_01_001'>
+      <model name='aws_robomaker_warehouse_GroundB_01'>
+        <link name='ground_link'>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_GroundB_01_collision.DAE</uri>
+                <scale>1 1 1</scale>
+              </mesh>
+            </geometry>
+            <surface>
+              <friction>
+                <ode>
+                  <mu>0.29999999999999999</mu>
+                  <mu2>0.29999999999999999</mu2>
+                  <fdir1>0 0 0</fdir1>
+                  <slip1>0</slip1>
+                  <slip2>0</slip2>
+                </ode>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_GroundB_01_visual.DAE</uri>
+              </mesh>
+            </geometry>
+            <meta>
+              <layer>1</layer>
+            </meta>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>
+      <pose>0 0 -0.090092000000000005 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='aws_robomaker_warehouse_Lamp_01_005'>
+      <model name='aws_robomaker_warehouse_Lamp_01'>
+        <link name='link'>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_Lamp_01_collision.DAE</uri>
+                <scale>1 1 1</scale>
+              </mesh>
+            </geometry>
+            <surface>
+              <friction>
+                <ode>
+                  <mu>0.20000000000000001</mu>
+                  <mu2>0.20000000000000001</mu2>
+                  <fdir1>0 0 0</fdir1>
+                  <slip1>0</slip1>
+                  <slip2>0</slip2>
+                </ode>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_Lamp_01_visual.DAE</uri>
+              </mesh>
+            </geometry>
+            <meta>
+              <layer>1</layer>
+            </meta>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>
+      <pose>0 0 -4 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='aws_robomaker_warehouse_Bucket_01_020'>
+      <model name='aws_robomaker_warehouse_Bucket_01'>
+        <link name='body'>
+          <pose>0 0 0 0 0 0</pose>
+          <self_collide>false</self_collide>
+          <kinematic>false</kinematic>
+          <gravity>true</gravity>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_Bucket_01_visual.DAE</uri>
+              </mesh>
+            </geometry>
+            <meta>
+              <layer>1</layer>
+            </meta>
+          </visual>
+          <collision name='collision_0'>
+            <laser_retro>0</laser_retro>
+            <max_contacts>10</max_contacts>
+            <pose>0 0 0 0 0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_Bucket_01_collision.DAE</uri>
+                <scale>1 1 1</scale>
+              </mesh>
+            </geometry>
+            <surface>
+              <friction>
+                <ode>
+                  <mu>0.40000000000000002</mu>
+                  <mu2>0.40000000000000002</mu2>
+                  <fdir1>0 0 0</fdir1>
+                  <slip1>0</slip1>
+                  <slip2>0</slip2>
+                </ode>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <patch_radius>0</patch_radius>
+                  <surface_radius>0</surface_radius>
+                  <use_patch_radius>true</use_patch_radius>
+                  <ode>
+                    <slip>0</slip>
+                  </ode>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+        </link>
+        <static>true</static>
+      </model>
+      <pose>0.43344899999999997 9.63171 0 0 0 -1.5631600000000001</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='aws_robomaker_warehouse_Bucket_01_021'>
+      <model name='aws_robomaker_warehouse_Bucket_01'>
+        <link name='body'>
+          <pose>0 0 0 0 0 0</pose>
+          <self_collide>false</self_collide>
+          <kinematic>false</kinematic>
+          <gravity>true</gravity>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_Bucket_01_visual.DAE</uri>
+              </mesh>
+            </geometry>
+            <meta>
+              <layer>1</layer>
+            </meta>
+          </visual>
+          <collision name='collision_0'>
+            <laser_retro>0</laser_retro>
+            <max_contacts>10</max_contacts>
+            <pose>0 0 0 0 0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_Bucket_01_collision.DAE</uri>
+                <scale>1 1 1</scale>
+              </mesh>
+            </geometry>
+            <surface>
+              <friction>
+                <ode>
+                  <mu>0.40000000000000002</mu>
+                  <mu2>0.40000000000000002</mu2>
+                  <fdir1>0 0 0</fdir1>
+                  <slip1>0</slip1>
+                  <slip2>0</slip2>
+                </ode>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <patch_radius>0</patch_radius>
+                  <surface_radius>0</surface_radius>
+                  <use_patch_radius>true</use_patch_radius>
+                  <ode>
+                    <slip>0</slip>
+                  </ode>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+        </link>
+        <static>true</static>
+      </model>
+      <pose>-1.8321000000000001 -6.3752000000000004 0 0 0 -1.5631600000000001</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='aws_robomaker_warehouse_Bucket_01_022'>
+      <model name='aws_robomaker_warehouse_Bucket_01'>
+        <link name='body'>
+          <pose>0 0 0 0 0 0</pose>
+          <self_collide>false</self_collide>
+          <kinematic>false</kinematic>
+          <gravity>true</gravity>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_Bucket_01_visual.DAE</uri>
+              </mesh>
+            </geometry>
+            <meta>
+              <layer>1</layer>
+            </meta>
+          </visual>
+          <collision name='collision_0'>
+            <laser_retro>0</laser_retro>
+            <max_contacts>10</max_contacts>
+            <pose>0 0 0 0 0 0</pose>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_Bucket_01_collision.DAE</uri>
+                <scale>1 1 1</scale>
+              </mesh>
+            </geometry>
+            <surface>
+              <friction>
+                <ode>
+                  <mu>0.40000000000000002</mu>
+                  <mu2>0.40000000000000002</mu2>
+                  <fdir1>0 0 0</fdir1>
+                  <slip1>0</slip1>
+                  <slip2>0</slip2>
+                </ode>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <patch_radius>0</patch_radius>
+                  <surface_radius>0</surface_radius>
+                  <use_patch_radius>true</use_patch_radius>
+                  <ode>
+                    <slip>0</slip>
+                  </ode>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+        </link>
+        <static>true</static>
+      </model>
+      <pose>0.43344899999999997 8.5899999999999999 0 0 0 -1.5631600000000001</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='aws_robomaker_warehouse_ClutteringA_01_016'>
+      <model name='aws_robomaker_warehouse_ClutteringA_01'>
+        <link name='link'>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ClutteringA_01_collision.DAE</uri>
+              </mesh>
+            </geometry>
+            <surface>
+              <friction>
+                <ode>
+                  <mu>0.59999999999999998</mu>
+                  <mu2>0.59999999999999998</mu2>
+                  <fdir1>0 0 0</fdir1>
+                  <slip1>0</slip1>
+                  <slip2>0</slip2>
+                </ode>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <patch_radius>0</patch_radius>
+                  <surface_radius>0</surface_radius>
+                  <use_patch_radius>true</use_patch_radius>
+                  <ode>
+                    <slip>0</slip>
+                  </ode>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ClutteringA_01_visual.DAE</uri>
+              </mesh>
+            </geometry>
+            <meta>
+              <layer>1</layer>
+            </meta>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>
+      <pose>5.7081400000000002 8.6168399999999998 -0.017476999999999999 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='aws_robomaker_warehouse_ClutteringA_01_017'>
+      <model name='aws_robomaker_warehouse_ClutteringA_01'>
+        <link name='link'>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ClutteringA_01_collision.DAE</uri>
+              </mesh>
+            </geometry>
+            <surface>
+              <friction>
+                <ode>
+                  <mu>0.59999999999999998</mu>
+                  <mu2>0.59999999999999998</mu2>
+                  <fdir1>0 0 0</fdir1>
+                  <slip1>0</slip1>
+                  <slip2>0</slip2>
+                </ode>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <patch_radius>0</patch_radius>
+                  <surface_radius>0</surface_radius>
+                  <use_patch_radius>true</use_patch_radius>
+                  <ode>
+                    <slip>0</slip>
+                  </ode>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ClutteringA_01_visual.DAE</uri>
+              </mesh>
+            </geometry>
+            <meta>
+              <layer>1</layer>
+            </meta>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>
+      <pose>3.4086400000000001 8.6168399999999998 -0.017476999999999999 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='aws_robomaker_warehouse_ClutteringA_01_018'>
+      <model name='aws_robomaker_warehouse_ClutteringA_01'>
+        <link name='link'>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ClutteringA_01_collision.DAE</uri>
+              </mesh>
+            </geometry>
+            <surface>
+              <friction>
+                <ode>
+                  <mu>0.59999999999999998</mu>
+                  <mu2>0.59999999999999998</mu2>
+                  <fdir1>0 0 0</fdir1>
+                  <slip1>0</slip1>
+                  <slip2>0</slip2>
+                </ode>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <patch_radius>0</patch_radius>
+                  <surface_radius>0</surface_radius>
+                  <use_patch_radius>true</use_patch_radius>
+                  <ode>
+                    <slip>0</slip>
+                  </ode>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ClutteringA_01_visual.DAE</uri>
+              </mesh>
+            </geometry>
+            <meta>
+              <layer>1</layer>
+            </meta>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>
+      <pose>-1.49129 5.2224300000000001 -0.017476999999999999 0 0 -1.5831900000000003</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='aws_robomaker_warehouse_ClutteringC_01_027'>
+      <model name='aws_robomaker_warehouse_ClutteringC_01'>
+        <link name='link'>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ClutteringC_01_collision.DAE</uri>
+              </mesh>
+            </geometry>
+            <surface>
+              <friction>
+                <ode>
+                  <mu>0.59999999999999998</mu>
+                  <mu2>0.59999999999999998</mu2>
+                  <fdir1>0 0 0</fdir1>
+                  <slip1>0</slip1>
+                  <slip2>0</slip2>
+                </ode>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <patch_radius>0</patch_radius>
+                  <surface_radius>0</surface_radius>
+                  <use_patch_radius>true</use_patch_radius>
+                  <ode>
+                    <slip>0</slip>
+                  </ode>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ClutteringC_01_visual.DAE</uri>
+              </mesh>
+            </geometry>
+            <meta>
+              <layer>1</layer>
+            </meta>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>
+      <pose>3.3249599999999999 3.8224499999999999 -0.012064 0 0 1.5638700000000001</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='aws_robomaker_warehouse_ClutteringC_01_028'>
+      <model name='aws_robomaker_warehouse_ClutteringC_01'>
+        <link name='link'>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ClutteringC_01_collision.DAE</uri>
+              </mesh>
+            </geometry>
+            <surface>
+              <friction>
+                <ode>
+                  <mu>0.59999999999999998</mu>
+                  <mu2>0.59999999999999998</mu2>
+                  <fdir1>0 0 0</fdir1>
+                  <slip1>0</slip1>
+                  <slip2>0</slip2>
+                </ode>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <patch_radius>0</patch_radius>
+                  <surface_radius>0</surface_radius>
+                  <use_patch_radius>true</use_patch_radius>
+                  <ode>
+                    <slip>0</slip>
+                  </ode>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ClutteringC_01_visual.DAE</uri>
+              </mesh>
+            </geometry>
+            <meta>
+              <layer>1</layer>
+            </meta>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>
+      <pose>5.5417100000000001 3.8164799999999999 -0.015663 0 0 -1.5831900000000003</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='aws_robomaker_warehouse_ClutteringC_01_029'>
+      <model name='aws_robomaker_warehouse_ClutteringC_01'>
+        <link name='link'>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ClutteringC_01_collision.DAE</uri>
+              </mesh>
+            </geometry>
+            <surface>
+              <friction>
+                <ode>
+                  <mu>0.59999999999999998</mu>
+                  <mu2>0.59999999999999998</mu2>
+                  <fdir1>0 0 0</fdir1>
+                  <slip1>0</slip1>
+                  <slip2>0</slip2>
+                </ode>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <patch_radius>0</patch_radius>
+                  <surface_radius>0</surface_radius>
+                  <use_patch_radius>true</use_patch_radius>
+                  <ode>
+                    <slip>0</slip>
+                  </ode>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ClutteringC_01_visual.DAE</uri>
+              </mesh>
+            </geometry>
+            <meta>
+              <layer>1</layer>
+            </meta>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>
+      <pose>5.3842400000000001 6.1371500000000001 0 0 0 -3.1331899999999999</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='aws_robomaker_warehouse_ClutteringC_01_030'>
+      <model name='aws_robomaker_warehouse_ClutteringC_01'>
+        <link name='link'>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ClutteringC_01_collision.DAE</uri>
+              </mesh>
+            </geometry>
+            <surface>
+              <friction>
+                <ode>
+                  <mu>0.59999999999999998</mu>
+                  <mu2>0.59999999999999998</mu2>
+                  <fdir1>0 0 0</fdir1>
+                  <slip1>0</slip1>
+                  <slip2>0</slip2>
+                </ode>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <patch_radius>0</patch_radius>
+                  <surface_radius>0</surface_radius>
+                  <use_patch_radius>true</use_patch_radius>
+                  <ode>
+                    <slip>0</slip>
+                  </ode>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ClutteringC_01_visual.DAE</uri>
+              </mesh>
+            </geometry>
+            <meta>
+              <layer>1</layer>
+            </meta>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>
+      <pose>3.2360000000000002 6.1371500000000001 0 0 0 -3.1331899999999999</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='aws_robomaker_warehouse_ClutteringC_01_031'>
+      <model name='aws_robomaker_warehouse_ClutteringC_01'>
+        <link name='link'>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ClutteringC_01_collision.DAE</uri>
+              </mesh>
+            </geometry>
+            <surface>
+              <friction>
+                <ode>
+                  <mu>0.59999999999999998</mu>
+                  <mu2>0.59999999999999998</mu2>
+                  <fdir1>0 0 0</fdir1>
+                  <slip1>0</slip1>
+                  <slip2>0</slip2>
+                </ode>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <patch_radius>0</patch_radius>
+                  <surface_radius>0</surface_radius>
+                  <use_patch_radius>true</use_patch_radius>
+                  <ode>
+                    <slip>0</slip>
+                  </ode>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ClutteringC_01_visual.DAE</uri>
+              </mesh>
+            </geometry>
+            <meta>
+              <layer>1</layer>
+            </meta>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>
+      <pose>-1.57368 2.30199 -0.015663 0 0 -3.1331899999999999</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='aws_robomaker_warehouse_ClutteringC_01_032'>
+      <model name='aws_robomaker_warehouse_ClutteringC_01'>
+        <link name='link'>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ClutteringC_01_collision.DAE</uri>
+              </mesh>
+            </geometry>
+            <surface>
+              <friction>
+                <ode>
+                  <mu>0.59999999999999998</mu>
+                  <mu2>0.59999999999999998</mu2>
+                  <fdir1>0 0 0</fdir1>
+                  <slip1>0</slip1>
+                  <slip2>0</slip2>
+                </ode>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <patch_radius>0</patch_radius>
+                  <surface_radius>0</surface_radius>
+                  <use_patch_radius>true</use_patch_radius>
+                  <ode>
+                    <slip>0</slip>
+                  </ode>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ClutteringC_01_visual.DAE</uri>
+              </mesh>
+            </geometry>
+            <meta>
+              <layer>1</layer>
+            </meta>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>
+      <pose>-1.2196 9.407 -0.015663 0 0 1.5638700000000001</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='aws_robomaker_warehouse_ClutteringD_01_005'>
+      <model name='aws_robomaker_warehouse_ClutteringD_01'>
+        <link name='link'>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ClutteringD_01_collision.DAE</uri>
+                <scale>1 1 1</scale>
+              </mesh>
+            </geometry>
+            <surface>
+              <friction>
+                <ode>
+                  <mu>0.59999999999999998</mu>
+                  <mu2>0.59999999999999998</mu2>
+                  <fdir1>0 0 0</fdir1>
+                  <slip1>0</slip1>
+                  <slip2>0</slip2>
+                </ode>
+                <torsional>
+                  <coefficient>1</coefficient>
+                  <patch_radius>0</patch_radius>
+                  <surface_radius>0</surface_radius>
+                  <use_patch_radius>true</use_patch_radius>
+                  <ode>
+                    <slip>0</slip>
+                  </ode>
+                </torsional>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_ClutteringD_01_visual.DAE</uri>
+              </mesh>
+            </geometry>
+            <meta>
+              <layer>1</layer>
+            </meta>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>
+      <pose>-1.6346799999999999 -7.8118100000000004 -0.31955899999999998 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='aws_robomaker_warehouse_TrashCanC_01_002'>
+      <model name='aws_robomaker_warehouse_TrashCanC_01'>
+        <link name='link'>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_TrashCanC_01_collision.DAE</uri>
+              </mesh>
+            </geometry>
+            <surface>
+              <friction>
+                <ode>
+                  <mu>0.40000000000000002</mu>
+                  <mu2>0.40000000000000002</mu2>
+                  <fdir1>0 0 0</fdir1>
+                  <slip1>0</slip1>
+                  <slip2>0</slip2>
+                </ode>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_TrashCanC_01_visual.DAE</uri>
+              </mesh>
+            </geometry>
+            <meta>
+              <layer>1</layer>
+            </meta>
+          </visual>
+        </link>
+        <static>true</static>
+      </model>
+      <pose>-1.5924400000000001 7.7154199999999999 0 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='aws_robomaker_warehouse_PalletJackB_01_001'>
+      <model name='aws_robomaker_warehouse_PalletJackB_01'>
+        <link name='link'>
+          <inertial>
+            <mass>2</mass>
+            <inertia>
+              <ixx>0.27700000000000002</ixx>
+              <ixy>0</ixy>
+              <ixz>0</ixz>
+              <iyy>0.45200000000000001</iyy>
+              <iyz>0</iyz>
+              <izz>0.26800000000000002</izz>
+            </inertia>
+          </inertial>
+          <collision name='collision'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_PalletJackB_01_collision.DAE</uri>
+              </mesh>
+            </geometry>
+            <surface>
+              <friction>
+                <ode>
+                  <mu>0.20000000000000001</mu>
+                  <mu2>0.20000000000000001</mu2>
+                  <fdir1>0 0 0</fdir1>
+                  <slip1>0</slip1>
+                  <slip2>0</slip2>
+                </ode>
+              </friction>
+            </surface>
+          </collision>
+          <visual name='visual'>
+            <geometry>
+              <mesh>
+                <uri>meshes/aws_robomaker_warehouse_PalletJackB_01_visual.DAE</uri>
+              </mesh>
+            </geometry>
+            <meta>
+              <layer>1</layer>
+            </meta>
+          </visual>
+        </link>
+      </model>
+      <pose>-0.27608802187625026 -9.4819440187631514 0.021914310789727238 -1.5310941238717278e-06 -0.00082997417645378413 1.3402410471877113e-09</pose>
+      <static>true</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='Razer_BlackWidow_Stealth_2014_Keyboard_07VFzIVabgh'>
+      <link name='link_0'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/koro/ros2_ws/src/arm/worlds/Razer_BlackWidow_Stealth_2014_Keyboard_07VFzIVabgh/meshes/model.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision_0'>
+          <geometry>
+            <mesh>
+              <uri>file:///home/koro/ros2_ws/src/arm/worlds/Razer_BlackWidow_Stealth_2014_Keyboard_07VFzIVabgh/meshes/model.obj</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>0.036383926868438728 -1.0590790510177612 0.12593987584114066 0.83592699158988815 0.014594599284144281 3.0190900043500282</pose>
+      <static>true</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='custom_arm'>
+      <joint name='world_to_base' type='fixed'>
+        <pose>0 0 0 0 0 0</pose>
+        <parent>world</parent>
+        <child>base_link</child>
+      </joint>
+      <link name='base_link'>
+        <pose>0 0 -0.01 0 0 0</pose>
+        <inertial>
+          <pose>0.0503201592109533 0.020064588078760891 0.01165351309763653 0 0 0</pose>
+          <mass>4.952153</mass>
+          <inertia>
+            <ixx>0.02379399629660495</ixx>
+            <ixy>-0.00084377990490798385</ixy>
+            <ixz>0.001517431355258649</ixz>
+            <iyy>0.020814236809851731</iyy>
+            <iyz>-0.001584707448205568</iyz>
+            <izz>0.025256265142129222</izz>
+          </inertia>
+        </inertial>
+        <collision name='base_link_collision'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.00097999999999999997 0.00097999999999999997 0.00097999999999999997</scale>
+              <uri>file:///home/koro/ros2_ws/install/arm/share/arm/meshes/base_link.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <collision name='base_link_fixed_joint_lump__base_plate_collision_1'>
+          <pose>0 0 0.065500000000000003 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.00097999999999999997 0.00097999999999999997 0.00097999999999999997</scale>
+              <uri>file:///home/koro/ros2_ws/install/arm/share/arm/meshes/base_plate.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='base_link_visual'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>file:///home/koro/ros2_ws/install/arm/share/arm/meshes/base_link.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>0.75000006 0.75000006 0.75000006 1</diffuse>
+            <ambient>0.75000006 0.75000006 0.75000006 1</ambient>
+          </material>
+        </visual>
+        <visual name='base_link_fixed_joint_lump__base_plate_visual_1'>
+          <pose>0 0 0.065500000000000003 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>file:///home/koro/ros2_ws/install/arm/share/arm/meshes/base_plate.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>0.75000006 0.75000006 0.75000006 1</diffuse>
+            <ambient>0.75000006 0.75000006 0.75000006 1</ambient>
+          </material>
+        </visual>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='base_yaw_joint' type='revolute'>
+        <pose>0 0 0 0 0 0</pose>
+        <parent>base_link</parent>
+        <child>shoulder_plate</child>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-3.1400000000000001</lower>
+            <upper>3.1400000000000001</upper>
+            <effort>100</effort>
+            <velocity>1</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='shoulder_plate'>
+        <pose>0.043511000000000001 -0.012448000000000001 0.024250000000000001 0 0 1.27038e-07</pose>
+        <inertial>
+          <pose>0.02619189333962867 -2.5804483299572021e-08 0.01501177623101878 0 0 0</pose>
+          <mass>2.2979949999999998</mass>
+          <inertia>
+            <ixx>0.0080141771249909611</ixx>
+            <ixy>1.827706960307079e-09</ixy>
+            <ixz>-0.001141134898135253</ixz>
+            <iyy>0.0077902856848298448</iyy>
+            <iyz>1.178868912349402e-09</iyz>
+            <izz>0.01159610855984246</izz>
+          </inertia>
+        </inertial>
+        <collision name='shoulder_plate_collision'>
+          <pose>-0.043511000000000001 0.012448000000000001 -0.034250000000000003 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.00097999999999999997 0.00097999999999999997 0.00097999999999999997</scale>
+              <uri>file:///home/koro/ros2_ws/install/arm/share/arm/meshes/shoulder_plate.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <collision name='shoulder_plate_fixed_joint_lump__shoulder_fixed_link_collision_1'>
+          <pose>0.073499999999999996 -5.5959999999999999e-08 0.070000000000000007 0 1.5707963267948966 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.00097999999999999997 0.00097999999999999997 0.00097999999999999997</scale>
+              <uri>file:///home/koro/ros2_ws/install/arm/share/arm/meshes/shoulder_fixed_link.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='shoulder_plate_visual'>
+          <pose>-0.043511000000000001 0.012448000000000001 -0.034250000000000003 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>file:///home/koro/ros2_ws/install/arm/share/arm/meshes/shoulder_plate.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>0.75000006 0.75000006 0.75000006 1</diffuse>
+            <ambient>0.75000006 0.75000006 0.75000006 1</ambient>
+          </material>
+        </visual>
+        <visual name='shoulder_plate_fixed_joint_lump__shoulder_fixed_link_visual_1'>
+          <pose>0.073499999999999996 -5.5959999999999999e-08 0.070000000000000007 0 1.5707963267948966 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>file:///home/koro/ros2_ws/install/arm/share/arm/meshes/shoulder_fixed_link.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>0.75000006 0.75000006 0.75000006 1</diffuse>
+            <ambient>0.75000006 0.75000006 0.75000006 1</ambient>
+          </material>
+        </visual>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='shoulder_joint' type='revolute'>
+        <pose>0 0 0 0 0 0</pose>
+        <parent>shoulder_plate</parent>
+        <child>shoulder_link</child>
+        <axis>
+          <xyz>1 0 0</xyz>
+          <limit>
+            <lower>-1.5700000000000001</lower>
+            <upper>1.5700000000000001</upper>
+            <effort>100</effort>
+            <velocity>1</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='shoulder_link'>
+        <pose>0.058011 -0.0124481 0.09425 1.4205500000000003e-05 1.0097419586828951e-28 1.27038e-07</pose>
+        <inertial>
+          <pose>-0.03220562420332998 2.2731992674184219e-05 0.21492499230440729 0 0 0</pose>
+          <mass>6.4254960000000008</mass>
+          <inertia>
+            <ixx>0.28586327473504042</ixx>
+            <ixy>8.0153606155207164e-07</ixy>
+            <ixz>0.020337884652200568</ixz>
+            <iyy>0.29035770581966142</iyy>
+            <iyz>-6.7408343673235841e-06</iyz>
+            <izz>0.01128143128931383</izz>
+          </inertia>
+        </inertial>
+        <collision name='shoulder_link_collision'>
+          <pose>0.058999999999999997 0 0 0 1.5707963267948966 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.00097999999999999997 0.00097999999999999997 0.00097999999999999997</scale>
+              <uri>file:///home/koro/ros2_ws/install/arm/share/arm/meshes/shoulder_link.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <collision name='shoulder_link_fixed_joint_lump__elbow_fixed_link_collision_1'>
+          <pose>0.018499999999999999 3.0999999999999988e-05 0.45002799999999998 0 1.5707963267948966 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.00097999999999999997 0.00097999999999999997 0.00097999999999999997</scale>
+              <uri>file:///home/koro/ros2_ws/install/arm/share/arm/meshes/elbow_fixed_link.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='shoulder_link_visual'>
+          <pose>0.058999999999999997 0 0 0 1.5707963267948966 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>file:///home/koro/ros2_ws/install/arm/share/arm/meshes/shoulder_link.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>0.75000006 0.75000006 0.75000006 1</diffuse>
+            <ambient>0.75000006 0.75000006 0.75000006 1</ambient>
+          </material>
+        </visual>
+        <visual name='shoulder_link_fixed_joint_lump__elbow_fixed_link_visual_1'>
+          <pose>0.018499999999999999 3.0999999999999988e-05 0.45002799999999998 0 1.5707963267948966 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>file:///home/koro/ros2_ws/install/arm/share/arm/meshes/elbow_fixed_link.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>0.75000006 0.75000006 0.75000006 1</diffuse>
+            <ambient>0.75000006 0.75000006 0.75000006 1</ambient>
+          </material>
+        </visual>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='elbow_joint' type='revolute'>
+        <pose>0 0 0 0 0 0</pose>
+        <parent>shoulder_link</parent>
+        <child>elbow_link</child>
+        <axis>
+          <xyz>1 0 0</xyz>
+          <limit>
+            <lower>-2.5</lower>
+            <upper>2.5</upper>
+            <effort>100</effort>
+            <velocity>1</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='elbow_link'>
+        <pose>0.020011000000000001 -0.0124388 0.54428900000000002 4.4225600000000012e-05 -8.0779356694631609e-28 1.2575900000000006e-07</pose>
+        <inertial>
+          <pose>-0.046222411183284497 -0.33544818850147629 -0.15475192584977759 0 0 0</pose>
+          <mass>16.319033999999998</mass>
+          <inertia>
+            <ixx>0.78364524977947747</ixx>
+            <ixy>-0.082718297236698657</ixy>
+            <ixz>-0.035768764832313872</ixz>
+            <iyy>0.3216731998377198</iyy>
+            <iyz>-0.2894003236231748</iyz>
+            <izz>0.8165279093297515</izz>
+          </inertia>
+        </inertial>
+        <collision name='elbow_link_collision'>
+          <pose>0.056500000000000002 1.5e-05 -1.1e-05 0 1.5707963267948966 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.00097999999999999997 0.00097999999999999997 0.00097999999999999997</scale>
+              <uri>file:///home/koro/ros2_ws/install/arm/share/arm/meshes/elbow_link.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <collision name='elbow_link_fixed_joint_lump__bevel_link_collision_1'>
+          <pose>0.053499999999999999 -0.477719 -0.219809 3.0624856231441535e-17 -0.43633 1.5700000000000001</pose>
+          <geometry>
+            <mesh>
+              <scale>0.00097999999999999997 0.00097999999999999997 0.00097999999999999997</scale>
+              <uri>file:///home/koro/ros2_ws/install/arm/share/arm/meshes/bevel_link.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='elbow_link_visual'>
+          <pose>0.056500000000000002 1.5e-05 -1.1e-05 0 1.5707963267948966 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>file:///home/koro/ros2_ws/install/arm/share/arm/meshes/elbow_link.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>0.75000006 0.75000006 0.75000006 1</diffuse>
+            <ambient>0.75000006 0.75000006 0.75000006 1</ambient>
+          </material>
+        </visual>
+        <visual name='elbow_link_fixed_joint_lump__bevel_link_visual_1'>
+          <pose>0.053499999999999999 -0.477719 -0.219809 3.0624856231441535e-17 -0.43633 1.5700000000000001</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>file:///home/koro/ros2_ws/install/arm/share/arm/meshes/bevel_link.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>0.37500003 0.37500003 0.37500003 1</diffuse>
+            <ambient>0.37500003 0.37500003 0.37500003 1</ambient>
+          </material>
+        </visual>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='wrist_pitch_joint' type='revolute'>
+        <pose>0 0 0 0 0 0</pose>
+        <parent>elbow_link</parent>
+        <child>wrist_pitch_link</child>
+        <axis>
+          <xyz>1 0 0</xyz>
+          <limit>
+            <lower>-1.5700000000000001</lower>
+            <upper>1.5700000000000001</upper>
+            <effort>100</effort>
+            <velocity>1</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='wrist_pitch_link'>
+        <pose>0.020511100000000001 -0.48993900000000001 0.32156699999999999 1.5457299999999999e-05 4.0389678347315804e-28 1.2631400000000005e-07</pose>
+        <inertial>
+          <pose>-0.063523999999999997 -0.035498000000000002 -0.017454000000000001 0 0 0</pose>
+          <mass>2.2092290000000001</mass>
+          <inertia>
+            <ixx>0.0053889999999999997</ixx>
+            <ixy>0.00017990000000000001</ixy>
+            <ixz>8.496e-05</ixz>
+            <iyy>0.0031080000000000001</iyy>
+            <iyz>-0.0019650000000000002</iyz>
+            <izz>0.005901</izz>
+          </inertia>
+        </inertial>
+        <collision name='wrist_pitch_link_collision'>
+          <pose>0.052999999999999999 -0.00020799999999999999 0.002892 3.0624856231441535e-17 -0.43633 1.5700000000000001</pose>
+          <geometry>
+            <mesh>
+              <scale>0.00097999999999999997 0.00097999999999999997 0.00097999999999999997</scale>
+              <uri>file:///home/koro/ros2_ws/install/arm/share/arm/meshes/wrist_pitch_link.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='wrist_pitch_link_visual'>
+          <pose>0.052999999999999999 -0.00020799999999999999 0.002892 3.0624856231441535e-17 -0.43633 1.5700000000000001</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>file:///home/koro/ros2_ws/install/arm/share/arm/meshes/wrist_pitch_link.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>0.37500003 0.37500003 0.37500003 1</diffuse>
+            <ambient>0.37500003 0.37500003 0.37500003 1</ambient>
+          </material>
+        </visual>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='wrist_roll_joint' type='revolute'>
+        <pose>0 0 -5.5511199999999995e-17 0 0 0</pose>
+        <parent>wrist_pitch_link</parent>
+        <child>wrist_roll_link</child>
+        <axis>
+          <xyz>0 1 0</xyz>
+          <limit>
+            <lower>-3.1400000000000001</lower>
+            <upper>3.1400000000000001</upper>
+            <effort>100</effort>
+            <velocity>1</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='wrist_roll_link'>
+        <pose>0.020511100000000001 -0.50715900000000003 0.31353700000000001 0.43634800000000012 -3.1060599999999991e-06 -1.3222699999999998e-06</pose>
+        <inertial>
+          <pose>0.05791121294860159 0.023079774901445149 -0.058318000840509698 0 0 0</pose>
+          <mass>2.3093129999999999</mass>
+          <inertia>
+            <ixx>0.0090579919623603317</ixx>
+            <ixy>-0.00032096217171367382</ixy>
+            <ixz>0.00044857139936757811</ixz>
+            <iyy>0.0083458363512329617</iyy>
+            <iyz>0.0036382224847473351</iyz>
+            <izz>0.01001322258072661</izz>
+          </inertia>
+        </inertial>
+        <collision name='wrist_roll_link_fixed_joint_lump__gripper_link_collision'>
+          <pose>0.024829198427279198 -0.15842569068651399 0.029301000000000001 0 0 3.1400000000000001</pose>
+          <geometry>
+            <mesh>
+              <scale>0.00097999999999999997 0.00097999999999999997 0.00097999999999999997</scale>
+              <uri>file:///home/koro/ros2_ws/install/arm/share/arm/meshes/gripper_link.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <collision name='wrist_roll_link_fixed_joint_lump__camera_link_collision_1'>
+          <pose>-6.4661708408268878e-05 -0.083599948508138108 0.08950000000000001 0 0 -1.5723889803845861</pose>
+          <geometry>
+            <box>
+              <size>0.025049999999999999 0.089999999999999997 0.025000000000000001</size>
+            </box>
+          </geometry>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+          </surface>
+        </collision>
+        <visual name='wrist_roll_link_fixed_joint_lump__gripper_link_visual'>
+          <pose>0.024829198427279198 -0.15842569068651399 0.029301000000000001 0 0 3.1400000000000001</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>file:///home/koro/ros2_ws/install/arm/share/arm/meshes/gripper_link.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>1 0.625 0.125 1</diffuse>
+            <ambient>1 0.625 0.125 1</ambient>
+          </material>
+        </visual>
+        <visual name='wrist_roll_link_fixed_joint_lump__camera_link_visual_1'>
+          <pose>-7.1510115948716419e-05 -0.087899943054566526 0.08950000000000001 1.5707963267948972 0 -0.0015926535896898021</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>file:///opt/ros/jazzy/share/realsense2_description/meshes/d435.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <sensor name='d435i_rgbd' type='rgbd_camera'>
+          <always_on>true</always_on>
+          <visualize>true</visualize>
+          <update_rate>30</update_rate>
+          <topic>camera</topic>
+          <camera>
+            <horizontal_fov>1.2110000000000001</horizontal_fov>
+            <camera_info_topic>camera/camera_info</camera_info_topic>
+            <image>
+              <width>640</width>
+              <height>480</height>
+              <format>R8G8B8</format>
+            </image>
+            <clip>
+              <near>0.10000000000000001</near>
+              <far>10</far>
+            </clip>
+          </camera>
+          <pose>0.017435300000000001 -0.083627800000000002 0.089499999999999996 0 0 -1.57239</pose>
+          <gz_frame_id>camera_link</gz_frame_id>
+        </sensor>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='gripper_joint' type='revolute'>
+        <pose>-3.4694499999999997e-18 -5.5511199999999995e-17 0 0 0 0</pose>
+        <parent>wrist_roll_link</parent>
+        <child>upper_jaw_link</child>
+        <axis>
+          <xyz>1 0 0</xyz>
+          <limit>
+            <lower>0</lower>
+            <upper>1.5700000000000001</upper>
+            <effort>100</effort>
+            <velocity>1</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+      </joint>
+      <link name='upper_jaw_link'>
+        <pose>0.0205294 -0.61408799999999997 0.28865400000000002 -0.436278 -0.00066999300000000045 3.1401500000000002</pose>
+        <inertial>
+          <pose>-0.059029999999999999 -0.189641 -0.083640999999999993 0 0 0</pose>
+          <mass>0.770764</mass>
+          <inertia>
+            <ixx>0.00084139999999999996</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.00053799999999999996</iyy>
+            <iyz>-0.00029050000000000001</iyz>
+            <izz>0.001075</izz>
+          </inertia>
+        </inertial>
+        <collision name='upper_jaw_link_collision'>
+          <pose>-0.024892000000000001 0.050959999999999998 0.0066 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.00097999999999999997 0.00097999999999999997 0.00097999999999999997</scale>
+              <uri>file:///home/koro/ros2_ws/install/arm/share/arm/meshes/upper_jaw_link.stl</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='upper_jaw_link_visual'>
+          <pose>-0.024892000000000001 0.050959999999999998 0.0066 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>0.001 0.001 0.001</scale>
+              <uri>file:///home/koro/ros2_ws/install/arm/share/arm/meshes/upper_jaw_link.stl</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>1 0.625 0.125 1</diffuse>
+            <ambient>1 0.625 0.125 1</ambient>
+          </material>
+        </visual>
+        <enable_wind>false</enable_wind>
+      </link>
+      <plugin name='gz_ros2_control::GazeboSimROS2ControlPlugin' filename='libgz_ros2_control-system.so'>
+        <parameters>/home/koro/ros2_ws/install/arm_motion_planning/share/arm_motion_planning/config/ros2_controllers.yaml</parameters>
+      </plugin>
+      <frame name='base_joint' attached_to='base_link'>
+        <pose>0 0 0.065500000000000003 0 0 0</pose>
+      </frame>
+      <frame name='base_plate' attached_to='base_joint'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='shoulder_fixed_joint' attached_to='shoulder_plate'>
+        <pose>0.073499999999999996 -5.5959999999999999e-08 0.070000000000000007 0 0 0</pose>
+      </frame>
+      <frame name='shoulder_fixed_link' attached_to='shoulder_fixed_joint'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='elbow_fixed_joint' attached_to='shoulder_link'>
+        <pose>0.0089999999999999993 -6.0000000000000002e-06 0.45000000000000001 0 0 0</pose>
+      </frame>
+      <frame name='elbow_fixed_link' attached_to='elbow_fixed_joint'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='elbow_bevel_joint' attached_to='elbow_link'>
+        <pose>0.00050000000000000001 -0.36021900000000001 -0.16800699999999999 0 0 0</pose>
+      </frame>
+      <frame name='bevel_link' attached_to='elbow_bevel_joint'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='camera_accel_optical_joint' attached_to='camera_accel_frame'>
+        <pose>0 0 0 -1.5707963267948959 -5.5511151231257827e-17 -1.5707963267948959</pose>
+      </frame>
+      <frame name='camera_accel_optical_frame' attached_to='camera_accel_optical_joint'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='camera_accel_joint' attached_to='camera_link'>
+        <pose>-0.01174 -0.0055199999999999997 0.0051000000000000004 0 0 0</pose>
+      </frame>
+      <frame name='camera_accel_frame' attached_to='camera_accel_joint'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='camera_color_optical_joint' attached_to='camera_color_frame'>
+        <pose>0 0 0 -1.5707963267948959 -5.5511151231257827e-17 -1.5707963267948959</pose>
+      </frame>
+      <frame name='camera_color_optical_frame' attached_to='camera_color_optical_joint'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='camera_color_joint' attached_to='camera_link'>
+        <pose>0 0.014999999999999999 0 0 0 0</pose>
+      </frame>
+      <frame name='camera_color_frame' attached_to='camera_color_joint'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='camera_depth_optical_joint' attached_to='camera_depth_frame'>
+        <pose>0 0 0 -1.5707963267948959 -5.5511151231257827e-17 -1.5707963267948959</pose>
+      </frame>
+      <frame name='camera_depth_optical_frame' attached_to='camera_depth_optical_joint'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='camera_depth_joint' attached_to='camera_link'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='camera_depth_frame' attached_to='camera_depth_joint'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='camera_gyro_optical_joint' attached_to='camera_gyro_frame'>
+        <pose>0 0 0 -1.5707963267948959 -5.5511151231257827e-17 -1.5707963267948959</pose>
+      </frame>
+      <frame name='camera_gyro_optical_frame' attached_to='camera_gyro_optical_joint'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='camera_gyro_joint' attached_to='camera_link'>
+        <pose>-0.01174 -0.0055199999999999997 0.0051000000000000004 0 0 0</pose>
+      </frame>
+      <frame name='camera_gyro_frame' attached_to='camera_gyro_joint'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='camera_infra1_optical_joint' attached_to='camera_infra1_frame'>
+        <pose>0 0 0 -1.5707963267948959 -5.5511151231257827e-17 -1.5707963267948959</pose>
+      </frame>
+      <frame name='camera_infra1_optical_frame' attached_to='camera_infra1_optical_joint'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='camera_infra1_joint' attached_to='camera_link'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='camera_infra1_frame' attached_to='camera_infra1_joint'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='camera_infra2_optical_joint' attached_to='camera_infra2_frame'>
+        <pose>0 0 0 -1.5707963267948959 -5.5511151231257827e-17 -1.5707963267948959</pose>
+      </frame>
+      <frame name='camera_infra2_optical_frame' attached_to='camera_infra2_optical_joint'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='camera_infra2_joint' attached_to='camera_link'>
+        <pose>0 -0.050000000000000003 0 0 0 0</pose>
+      </frame>
+      <frame name='camera_infra2_frame' attached_to='camera_infra2_joint'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='camera_link_joint' attached_to='camera_bottom_screw_frame'>
+        <pose>0.0106 0.017500000000000002 0.012500000000000001 0 0 0</pose>
+      </frame>
+      <frame name='camera_link' attached_to='camera_link_joint'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='camera_joint' attached_to='gripper_link'>
+        <pose>0 0.029999999999999999 0.070000000000000007 0 0 1.570796326795</pose>
+      </frame>
+      <frame name='camera_bottom_screw_frame' attached_to='camera_joint'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='tool0_joint' attached_to='gripper_link'>
+        <pose>0 0.17499999999999999 -0.014999999999999999 0 0 0</pose>
+      </frame>
+      <frame name='tool0' attached_to='tool0_joint'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <frame name='wrist_to_gripper_joint' attached_to='wrist_roll_link'>
+        <pose>0 -0.042999999999999997 0.0070000000000000001 0 0 3.1400000000000001</pose>
+      </frame>
+      <frame name='gripper_link' attached_to='wrist_to_gripper_joint'>
+        <pose>0 0 0 0 0 0</pose>
+      </frame>
+      <pose>0 0 0.02 0 0 0</pose>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <light name='Warehouse_CeilingLight_003' type='point'>
+      <pose>0 0 8.5 0 0 0</pose>
+      <cast_shadows>true</cast_shadows>
+      <intensity>1</intensity>
+      <direction>0 0 -1</direction>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>0.200000003 0.200000003 0.200000003 1</specular>
+      <attenuation>
+        <range>80</range>
+        <linear>0.0099999997764825821</linear>
+        <constant>0.30000001192092896</constant>
+        <quadratic>0.0010000000474974513</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+  </world>
+</sdf>

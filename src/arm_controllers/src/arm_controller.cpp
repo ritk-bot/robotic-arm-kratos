@@ -39,7 +39,7 @@ ArmJogController::on_init()
         -2.50,
         -1.57,
         -3.14,
-        -1.00
+        0.00
     };
 
     upper_limits_ = {
@@ -48,7 +48,7 @@ ArmJogController::on_init()
         2.50,
         1.57,
         3.14,
-        1.00
+        1.57
     };
     last_command_time_ = get_node()->now();
     commanded_velocities_.assign(NUM_JOINTS, 0.0);
@@ -104,7 +104,7 @@ ArmJogController::command_interface_configuration() const
             "elbow_joint/position",
             "wrist_pitch_joint/position",
             "wrist_roll_joint/position",
-            "gripper_servo_joint/position"
+            "gripper_joint/position"
         }
     };
 }
@@ -123,7 +123,7 @@ ArmJogController::state_interface_configuration() const
             "elbow_joint/position",
             "wrist_pitch_joint/position",
             "wrist_roll_joint/position",
-            "gripper_servo_joint/position"
+            "gripper_joint/position"
         }
     };
 }
